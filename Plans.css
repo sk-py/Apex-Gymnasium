@@ -1,0 +1,152 @@
+.plans__sec{
+    padding: 0;
+    margin: 0;
+    height: max-content;
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../assets/Gymshark-hero-crop.jpg);
+    background-size:cover;
+    background-position-y:-6rem ;
+    background-repeat: no-repeat;
+    gap: 2rem;
+}
+.plans__sec>h1{
+    gap: 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    text-shadow: 2px 2px rgb(99, 144, 248);
+}
+.pwrapper{position: relative;
+    top:-2rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding-bottom: 10rem;
+}
+.plans{
+    background-color: rgba(183, 247, 252, 0.616);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    backdrop-filter: blur(1%);
+    color: black;   
+    transform: scale(1);
+    transition: 500ms;
+}
+.plans:hover{
+    transform: scale(1.04);
+}
+.plans>h1{
+    font-size: 1.3rem;
+    padding: 0.5rem;
+}
+.plans>ul>li{
+    font-family:sans-serif;
+    list-style:none;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    font-weight: 700;
+}
+.plans>ul>li::before{
+    content: "\2605";
+    color: rgba(231, 0, 0, 0.582);
+    margin-right:0.6rem;
+}
+.plans>p>span{
+      font-size: 2rem;
+}
+.plans>button{
+    padding: 0.5rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: 400ms ease-out;
+}
+.plans>button:hover{
+    filter: invert(1);
+}
+.pwrapper>:nth-child(1){
+   gap: 2.6rem;
+   font-weight: 700;
+}
+.pwrapper>:nth-child(2){
+    padding: 0 5px; 
+    transform: scale(1.08);
+}
+.plans:nth-of-type(2) h1 {
+    font-size: 1.5rem;
+}
+.pwrapper>:nth-child(2):hover{
+    transform: scale(1.17);
+}
+#lastbtn{
+    margin-top: 3rem;
+}
+
+
+@media screen and  (max-width:825px){
+    .plans__sec>h1{
+        font-size: 2rem;
+        gap: 0rem;
+    }
+    /* .pwrapper{
+        flex-direction: column;
+    } */
+    .plans{
+        border-radius: 1rem;
+    }
+    .plans>h1{
+       font-size: 1rem;
+       padding: 0.2rem;
+    }
+    .plans>ul>li{
+        line-height: 1rem;
+        font-size: 1rem;
+    }
+    .plans>p{
+        font-size: 0.9rem;
+    }
+    .plans>p>span{
+        font-size: 1.2rem;
+    }
+    
+    .plans>button{
+        padding: 0.3rem;
+        margin: 0.7rem;
+    }
+    .pwrapper>:nth-child(1){
+        gap: 1.8rem;
+        font-weight: 600;
+     }
+     .plans:hover{
+        transform: scale(1.06);
+    }
+
+
+}
+@media screen and (max-width:650px){
+    .plans__sec>h1{
+        font-size: 1.6rem;
+    }
+    .pwrapper{
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+    .plans>h1{
+        font-size: 1.1rem;
+    }
+    .plans:nth-of-type(2) h1 {
+        letter-spacing: -0.10rem;
+    }
+}
+
+@media screen and (max-width:380px){
+    .plans__sec>h1{
+          font-size: 1.2rem;
+    }
+}

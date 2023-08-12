@@ -1,0 +1,236 @@
+.footer-cont{
+    width: 100svw;
+    background-color: #021122;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    margin: 4rem 0rem 2rem 0rem;
+    /* margin-top: 7rem; */
+
+}
+.logo-div{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.logo-div>p{
+    color: white;
+    padding: 2rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+    'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo-div>img{
+      width:35% ;
+      margin-bottom: 1rem;
+}
+
+.main-foot{
+    width: 36.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form>input{
+    width: 50%;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 0.8rem 0rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+form>input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: rgba(15, 15, 92, 0.562);
+    font-size: 0.7rem;margin-left: -1rem;
+    font-weight: bold;
+}
+form>button{
+    width: fit-content;
+   padding: 0.6rem;
+   border-radius: 0.3rem;
+   border: 0.1rem solid;
+   cursor: pointer;
+}
+
+.no{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:2rem 0rem 3rem 0rem;
+    color: white;
+    
+}
+.no>p{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   text-transform: capitalize;
+   display: flex;
+    justify-content: center;
+    word-spacing: -0.08rem;
+}
+.no>a{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+.no>a:hover{
+    color: rgb(97, 97, 247);
+}
+
+.socials{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.socials>a{
+    padding: 2rem;
+}
+.socials>a>svg{
+    font-size: 2.5rem;
+}
+.socials> a:nth-of-type(1):hover{
+ color : #b43a8b;            
+ }
+.socials> a:nth-of-type(2):hover{
+         color: rgb(0, 102, 255);
+}
+.socials> a:nth-of-type(3):hover{
+         color: rgb(0, 255, 76);
+}
+
+.loc{
+    width: 30%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.loc>h3{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    
+
+}
+
+
+.gframe{
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ 
+hr{
+    width: 90%;
+}
+
+
+
+
+
+@media screen and (max-width:888px){
+
+       .footer-cont{
+        width: 100svw;
+        display: flex;
+        flex-direction: column;
+        margin-top: -6rem;
+       }    
+
+       .wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+       }
+
+       .logo-div{
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #fff; */
+       }
+       .logo-div>img{
+        width: 10rem;
+        padding-top: 5rem;
+       }
+       .main-foot{
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+       }
+       form{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       
+       .no{
+        width: 100%;
+        display: flex;
+        justify-content:center;
+       }
+       .no>a{
+          padding: 2rem;
+       }
+       .no>p{
+        margin-left: 1.5rem;
+       }
+       .socials{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: -0.5rem;
+       }
+       .socials>a{
+        padding: 1rem;
+       }
+       .loc{
+        order: 2;
+        width: 100%;
+       }
+       .gframe>iframe{
+        height: 300px;
+        width: 85%;
+        padding: 1rem;
+        margin-left: 5%;
+       }
+       hr{
+        
+        width: 80%;
+       }
+       
+}
+@media screen and (max-width:970px){
+       form>input{
+            width: 40%;
+       }
+}
+
+
+

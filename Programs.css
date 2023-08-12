@@ -1,0 +1,141 @@
+.programs{
+   display:flex;
+   flex-direction: column;
+   gap: 2rem;
+   padding: 0 2rem; 
+   margin-top: 9rem ;
+   margin-bottom: 9rem;
+}
+
+.pheader{
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: white;
+    font-style: oblique;
+    margin-bottom: 2rem;
+}
+
+.pcards{
+    display: flex;
+    gap: 1rem;
+    
+}
+/* .pcards:hover{
+} */
+
+.list{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 2rem;
+    gap: 1rem;
+    color: white;
+    justify-content: space-between;
+    transition-duration: 700ms;
+}
+.Montserrat_f{
+    font-family: 'Montserrat',sans-serif;
+    
+}
+
+.list>:nth-child(1){
+    width: 2rem;
+    height: 2rem;
+    fill: white;
+}
+.list>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+}
+.list>:nth-child(3){
+    font-size: 1rem;
+    line-height: 25px;
+}
+.jbtn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.jbtn>img{
+    width: 1rem;
+}
+
+.list:hover{
+    background:var(--planCard);
+    cursor: pointer;
+    transform:scale(1.05)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1030px){
+    .pheader{
+        font-size: 2rem;
+        gap: 1rem;
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    .pcards{
+        display: flex;
+        flex-direction:column;
+        /* width: 100%; */
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:920px){
+    .pheader{
+        font-size: 1.2rem;
+        /* gap: 0rem;
+        width:fit-content */
+    }
+    .pheader>span{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width:570px){
+    
+    .pheader>span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    /* .pheader>span{
+        font-size: 1.1rem;
+    } */
+}
+
+
+@media screen and (max-width:380px){
+    .pheader>span{
+        font-size: 1rem;
+    }
+}
